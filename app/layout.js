@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <InitColorSchemeScript />
-        <CssVarsProvider defaultMode="light">{children}</CssVarsProvider>
+        <InitColorSchemeScript defaultMode="system"/>
+        <CssVarsProvider defaultMode="system">{children}</CssVarsProvider>
       </body>
     </html>
   );
