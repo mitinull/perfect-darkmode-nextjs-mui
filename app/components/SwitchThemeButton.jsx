@@ -20,6 +20,8 @@ export function SwitchThemeButton() {
       variant="contained"
       size="large"
       onClick={() => setColorScheme(alternativeScheme)}
+      color="secondary"
+      sx={{ width: "50%" }}
     >
       {alternativeScheme}
     </Button>
