@@ -4,6 +4,7 @@ import {
   experimental_extendTheme as extendTheme,
   Experimental_CssVarsProvider as CssVarsProvider,
 } from "@mui/material/styles";
+import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +15,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <InitColorSchemeScript />
         <CssVarsProvider defaultMode="light">{children}</CssVarsProvider>
       </body>
     </html>

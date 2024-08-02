@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { SwitchThemeButton } from "./components/SwitchThemeButton";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       >
         Perfect Dark Theme With Next.js and MUI
       </Typography>
+      <SwitchThemeButton />
     </Box>
   );
 }
