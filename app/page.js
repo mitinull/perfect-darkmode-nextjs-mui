@@ -1,8 +1,13 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <main>
+    <Box
+      component="main"
+      bgcolor="background.default"
+      color="text.primary"
+      minHeight="110vh"
+    >
       <Typography
         variant="h1"
         color="secondary"
@@ -11,6 +16,6 @@ export default function Home() {
       >
         Perfect Dark Theme With Next.js and MUI
       </Typography>
-    </main>
+    </Box>
   );
 }
