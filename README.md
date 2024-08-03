@@ -11,7 +11,10 @@
 https://github.com/user-attachments/assets/6629d51a-ad70-4594-ad01-079ce50eb655
 
 ## Description
-This is an implementation of a light/dark theme with MUI and Next.js (App Router), which is not very straightforward, with a matching scrollbar and no flickering. Adding Fonts to MUI is also implemented.
+This is an implementation of a light/dark theme with MUI and Next.js (App Router) with a matching scrollbar and no flickering. Adding Fonts to MUI is also implemented.
+
+⚠️ Implementing a dark theme in Next.js is not very straight forward because components are rendered on the server side.
+
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
