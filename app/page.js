@@ -36,7 +36,14 @@ function MyButtonGroup({ orientation }) {
       >
         GitHub Repository
       </Button>
-      <Button startIcon={<YouTube />}>YouTube Tutorial</Button>
+      <Button
+        startIcon={<YouTube />}
+        LinkComponent={Link}
+        href="https://youtu.be/tWarkEhnfv0"
+        target="_blank"
+      >
+        YouTube Tutorial
+      </Button>
     </ButtonGroup>
   );
 }
