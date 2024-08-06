@@ -1,5 +1,7 @@
 import {
   Box,
+  Button,
+  ButtonGroup,
   Card,
   CardContent,
   Container,
@@ -12,6 +14,32 @@ import Image from "next/image";
 
 import bicycleLight from "./images/bicycle-light.jpg";
 import bicycleDark from "./images/bicycle-dark.jpg";
+import { BasketnullCard } from "./components/BasketnullCard";
+import Link from "next/link";
+import { GitHub, YouTube } from "@mui/icons-material";
+
+function MyButtonGroup({ orientation }) {
+  return (
+    <ButtonGroup
+      orientation={orientation}
+      size="large"
+      variant="outlined"
+      color="secondary"
+      fullWidth
+    >
+      <SwitchThemeButton />
+      <Button
+        LinkComponent={Link}
+        href="https://github.com/mitinull/perfect-darkmode-nextjs-mui"
+        target="_blank"
+        startIcon={<GitHub />}
+      >
+        GitHub Repository
+      </Button>
+      <Button startIcon={<YouTube />}>YouTube Tutorial</Button>
+    </ButtonGroup>
+  );
+}
 
 export default function Home() {
   return (
@@ -82,8 +110,14 @@ export default function Home() {
             </Box>
           </Card>
         </Grid>
-        <Grid item sx={12}>
-          <SwitchThemeButton />
+        <Grid item sm={4}>
+          <BasketnullCard />
+        </Grid>
+        <Grid item xs={12} sx={{ display: { xs: "none", sm: "inline-flex" } }}>
+          <MyButtonGroup orientation={"horizontal"} />
+        </Grid>
+        <Grid item xs={12} sx={{ display: { xs: "inline-flex", sm: "none" } }}>
+          <MyButtonGroup orientation={"vertical"} />
         </Grid>
       </Grid>
     </Container>
