@@ -1,17 +1,19 @@
 ## Watch YouTube Tutorial 🎓
-🔗 YouTube Link : https://youtu.be/tWarkEhnfv0
+- 🔗 YouTube Tutorial (Part 1) : https://youtu.be/tWarkEhnfv0
+- 🔗 YouTube Tutorial (Part 2) : https://youtu.be/bgH1xsH8OZw
 
-![dark-mode-mui-2](https://github.com/user-attachments/assets/5efb3956-2059-425b-a66b-735572b90173)
+## Lihgt Mode
+![image](https://github.com/user-attachments/assets/85ce497a-f54b-48d1-a3e9-ad6a4c777792)
 
-## Short Video (Demo)
-- No Flickering
-- Matching Scrollbar
-
-
-https://github.com/user-attachments/assets/6629d51a-ad70-4594-ad01-079ce50eb655
+## Dark Mode
+![image](https://github.com/user-attachments/assets/2403e04e-1372-4be8-9b91-b6dd2a5cd566)
 
 ## Description
 This is an implementation of a light/dark theme with MUI and Next.js (App Router) with a matching scrollbar and no flickering. Adding Fonts to MUI is also implemented.
+
+Update: 
+- Different images are shown in light / dark theme.
+- No more button flickering!
 
 ⚠️ Implementing a dark theme in Next.js is not very straight forward because components are rendered on the server side.
 
