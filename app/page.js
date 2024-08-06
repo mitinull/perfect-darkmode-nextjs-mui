@@ -13,7 +13,6 @@ import Image from "next/image";
 import bicycleLight from "./images/bicycle-light.jpg";
 import bicycleDark from "./images/bicycle-dark.jpg";
 
-
 export default function Home() {
   return (
     <Container
@@ -78,7 +77,7 @@ export default function Home() {
                   objectFit: "cover",
                   height: "auto",
                 }}
-                className="img-light"
+                className="img-dark"
               />
             </Box>
           </Card>

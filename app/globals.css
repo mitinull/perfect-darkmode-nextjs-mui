@@ -11,3 +11,11 @@
 [data-mui-color-scheme="dark"] {
   color-scheme: dark;
 }
+
+[data-mui-color-scheme="light"] .img-dark {
+  display: none !important;
+}
+
+[data-mui-color-scheme="dark"] .img-light {
+  display: none !important;
+}
