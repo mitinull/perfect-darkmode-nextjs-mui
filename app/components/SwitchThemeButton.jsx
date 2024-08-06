@@ -8,22 +8,15 @@ export function SwitchThemeButton() {
 
   const alternativeScheme = colorScheme === "light" ? "dark" : "light";
 
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true));
-
-  if (!mounted) {
-    return null;
-  }
-
   return (
     <Button
       variant="contained"
       size="large"
       onClick={() => setColorScheme(alternativeScheme)}
       color="secondary"
-      sx={{ width: "50%" }}
     >
-      {alternativeScheme}
+      <span className="img-dark">Switch to Light</span>
+      <span className="img-light">Switch to Dark</span>
     </Button>
   );
 }
